@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    color: #161675;
+    text-decoration: solid
+    
+}
+a:hover{
+    color: #8443da;
+    text-decoration: underline;
+}

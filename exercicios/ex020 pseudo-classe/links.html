@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-element
+            > = children (filho)
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover{
+            color: #00f7ff;
+        }
+        a:active{ /* Quando o link é clicado */
+            color: #024902; 
+        }
+        .especial::after{ /* Adiciona um conteúdo depois do link */
+            content: ' ⇐';
+        }
+        .especial::before{ /* Adiciona um conteúdo antes do link */
+            content: '⇒ ';
+
+        }
+        .especial{
+            text-decoration: underline;
+        }
+        h1{
+            text-decoration: underline;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Links Personalizados</h1>
+    <ul>
+        <li><a href="https://www.linkedin.com/notifications/?filter=all" target="_blank" class="especial">Meu LinkedIn</a></li>
+        <li><a href="https://www.cursoemvideo.com/cursos/" target="_blank">Site do curso que estou fazendo</a></li>
+    </ul>
+</body>
+</html>

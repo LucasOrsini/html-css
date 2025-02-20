@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links (primeira página)</title>
+</head>
+<body>
+    <h1>Links Externos</h1>
+    <p>Você pode acessar o meu <a href="https://github.com/LucasOrsini?tab=repositories">repositório no GitHub</a></p> <!--Utilizar quando for direcionar para um local do mesmo site-->
+    <p>Você também pode acessar meu <a href="https://github.com/LucasOrsini?tab=repositories" target="_blank" rel="external">repositório no GitHub</a> sem que ele sobreponha meu site.</p> <!-- Utilizar (target="_blank") quando for para direcionar para um site externo, que não seja meu-->
+    <P>Entre no site do <a href="https://www.palmeiras.com.br/" target="_blank" rel="nofollow">maior time do Brasil</a>.</P><!--Utilizar (rel="nofollow") significa que o link não transmite autoridade de página para o site de destino. -->
+
+    <h1>Link Internos</h2>
+    <p>Esta é a primeira página do meu site. Se você quiser, também pode acessar a <a href="pag002.html" rel="next">segunda página</a>.</p> <!--Método para direcionar o usuário a outra página do seu site, que está na mesma pasta do index-->
+    <!--Usar (rel="next") indica ao navegador que a outra página, é a próxima-->
+    <p>Você também pode acessar a minha <a href="noticias/pag003.html" rel="next">página de notícias</a></p>
+    <h1>Links para Downloads</h1>
+    <ul>
+        <li><a href="livro/meulivro.pdf" download="meulivro.pdf" type="application/pdf">Link para baixar o livro em PDF.</a></li>
+        <li><a href="livro/meulivro.zip" download="meulivro.zip" type="application/zip">Link para baixar o livro compactado.</a></li>
+    </ul>
+</body>
+</html>

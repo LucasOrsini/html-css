@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #5f9ea0;
+            margin: 0px;
+            text-align: justify;
+        }
+        header{
+            background-color: rgb(197, 206, 206);
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.377);
+            border-radius: 5px;
+        }
+        h1{
+            font-size: 40px;
+            text-shadow: 1px 4px 5px rgba(0, 0, 0, 0.26);
+        }
+        nav{
+            background-color: #2a4d4e;
+            padding: 10px;
+            box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.377);
+            /* box-shadow: horizontal, vertical,espalhamento*/
+            border-radius: 15px;
+        }
+        nav > a{
+            color: white;
+            font-weight: bold;
+            margin: 20px;
+            text-decoration: none;
+            text-shadow: 1px 4px 5px rgba(255, 255, 255, 0.171);
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: #b6d6d6;
+            margin: 10px;
+            padding: 20px;
+            box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.377);
+            border-radius: 10px 0px;
+            /*esquerda em cima, direita em cima, direita embaixo, esquerda embaixo*/
+        }
+        footer{
+            background-color: #112122;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            padding: 4px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+        article > aside{
+            background-color: #5680803d;
+            margin-left: 20px;
+        }
+    
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site com grouping tags</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <h2>Assuntos diversos</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At labore soluta, omnis iusto expedita in suscipit. Totam perspiciatis ipsam tenetur id? Quidem dolore unde sapiente blanditiis temporibus labore reiciendis perspiciatis?</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre tudo</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto magnam accusamus ipsa numquam? Quod, exercitationem! Quos veniam necessitatibus aliquam excepturi incidunt, eos accusantium dolorum, modi blanditiis, hic non temporibus harum!</p>
+                <aside>
+                    <p>Artigo escrito por Irineu você não sabe nem eu</p>
+                </aside>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <p>Desenvolvido por mim</p>
+    </footer>
+</body>
+</html>
