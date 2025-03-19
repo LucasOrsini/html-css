@@ -3,20 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         body{
             height: 100vh;
+            
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover; /* cobrir toda a tela */
             /* background-size: contain; manter a proporção */
+            background-attachment: fixed; /* fixar a imagem */;
+
+            /*
+            Shorthand - background
+                color > image > position >repeat > [size] > attachment
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
+            */
         }
         main{
             background-color: white;
-            width: 400px;
+            max-width: 500px;
             border: 1px solid black;
             border-radius: 15px;
             margin: auto;
@@ -30,7 +40,13 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum amet est dolorem sed sint placeat. Dicta tenetur doloremque quasi cumque architecto eum inventore totam provident laborum sit, accusantium harum voluptates!</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus quasi incidunt cumque, ut laboriosam nulla quaerat dolores nemo, doloremque itaque error velit dicta, perferendis soluta sint repellendus quod perspiciatis laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates accusantium numquam distinctio veniam atque, cum, veritatis voluptatibus eligendi facere cupiditate tempore aut officia. Laboriosam nam enim iste aliquid dolore vel?</p>
         <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique ullam quod maxime quibusdam soluta officia, corporis corrupti autem accusantium exercitationem voluptate distinctio unde obcaecati dolore nihil eos? Non, repellendus odit.</P>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat veritatis quo fugit natus. Consequuntur amet, corporis facilis nesciunt fugit rem nihil ut laborum ipsam pariatur excepturi recusandae natus quo incidunt!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat veritatis quo fugit natus. Consequuntur amet, corporis facilis nesciunt fugit rem nihil ut laborum ipsam pariatur excepturi recusandae natus quo incidunt! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta debitis error voluptas fugiat eos laboriosam consequuntur illum, inventore atque libero minima reprehenderit in pariatur excepturi doloribus, consequatur impedit nostrum adipisci.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta quis necessitatibus sequi sed quas debitis laboriosam quam id officiis, labore dolore, totam magnam suscipit minima perferendis optio exercitationem corporis officia.
+
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis id exercitationem quia voluptatem quas sapiente facilis maiores. Quos pariatur nemo quibusdam itaque, esse, quisquam non laborum voluptatum, exercitationem iste quam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis id exercitationem quia voluptatem quas sapiente facilis maiores. Quos pariatur nemo quibusdam itaque, esse, quisquam non laborum voluptatum, exercitationem iste quam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis id exercitationem quia voluptatem quas sapiente facilis maiores. Quos pariatur nemo quibusdam itaque, esse, quisquam non laborum voluptatum, exercitationem iste quam?</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis id exercitationem quia voluptatem quas sapiente facilis maiores. Quos pariatur nemo quibusdam itaque, esse, quisquam non laborum voluptatum, exercitationem iste quam?</p>
     </main>
 </body>
