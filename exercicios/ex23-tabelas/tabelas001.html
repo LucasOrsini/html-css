@@ -10,23 +10,32 @@
 
         }
         table{
-            border-collapse: collapse; /* remove o espaço entre as bordas das células */
+            border-collapse: collapse; /* Remove o espaço entre as bordas das células */
             width: 400px;
+            height: 400px;
             background-color: white;
             border: 4px solid rgb(12, 113, 26);
 
         }
 
         td{
-            border: 1px solid #000000
+            border: 1px solid black;
             padding: 10px;
-        
-
+            text-align: center; /* Alinhamento horizontal */
+            vertical-align: top; /* Alinhamento vertical */
+            
         }
     </style>
 </head>
 <body>
     <h1>Minha primeira tabela</h1>
+    <!--
+        HIERARQUIA DE TABELAS
+        table -> tabela
+            tr (table row) -> linha da tabela
+                th (table header) -> cabeçalho da tabela 
+                td (table data)-> célula da tabela 
+    -->
     <table>
         <tr>
             <td>A1</td>
@@ -43,7 +52,6 @@
             <td>B3</td>
             <td>C3</td>
         </tr>
-
     </table>
     
 </body>
