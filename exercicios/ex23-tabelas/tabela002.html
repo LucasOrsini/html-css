@@ -12,8 +12,9 @@
 
         table {
             width: 500px;
-            border-collapse: collapse;
-            position: relative;
+            border-collapse: collapse; 
+            position: relative; /* Para o cabeçalho fixo */
+            
         }
 
         td, th {
@@ -35,16 +36,16 @@
         }
 
         thead > tr > th {
-            position: sticky;
-            top: -1px;
+            position: sticky; /* Fixa o cabeçalho da tabela no topo */
+            top: -1px; /* Para evitar que o cabeçalho fique atrás do conteúdo */
             background-color: #383838;
         }
 
-        tbody > tr:nth-child(odd) { /* 2n-1 */
-            background-color: white;
+        tbody > tr:nth-child(odd) { /* Ou 2n-1 */
+            background-color: whitesmoke;
         }
 
-        tbody > tr:nth-child(even) { /* 2n */
+        tbody > tr:nth-child(even) { /* Ou 2n */
             background-color: lightgray;
         }
 
@@ -68,19 +69,13 @@
                 TR, TD, TH
     -->
     <table>
-        <caption>População das Unidades Federativas</caption> 
+        <caption>População das Unidades Federativas</caption> <!-- TÍTULO/LEGENDA DA TABELA -->
         <thead>
             <tr>
-                <th scope="col">Estado</th>
+                <th scope="col">Estado</th> <!-- Escopo de coluna -->
                 <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
-        <tfoot>
-            <tr>
-                <th scope="row">Total de Habitantes</th>
-                <td class="num"><strong>210.147.125</strong></td>
-            </tr>
-        </tfoot>
         <tbody>
             <tr>
                 <td>São Paulo</td>
@@ -190,7 +185,13 @@
                 <td>Roraima</td>
                 <td class="num">605.761</td>
             </tr>
-        </tbody>      
+        </tbody>   
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th> <!-- Escopo de linha -->
+                <td class="num"><strong>210.147.125</strong></td>
+            </tr>
+        </tfoot>   
     </table>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptas optio perspiciatis reprehenderit quod mollitia iste, soluta, illo, in deleniti eligendi consectetur provident voluptatem veritatis eum eius nulla ut omnis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident eveniet amet voluptatem veniam voluptatum officia quisquam perspiciatis blanditiis, mollitia ratione qui nesciunt, sint deleniti, assumenda quasi quos vero doloribus! Fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, consectetur architecto omnis rem, ullam adipisci tenetur dolore perspiciatis officiis vitae voluptates atque laborum necessitatibus! Reiciendis aspernatur impedit reprehenderit dignissimos placeat? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda unde repellat dolorum eum voluptates ad illum recusandae, aperiam nihil et? Blanditiis, illo! In consectetur accusantium odit quos, repudiandae aut aspernatur?</p>
 
